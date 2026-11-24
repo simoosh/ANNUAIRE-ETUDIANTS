@@ -1,0 +1,20 @@
+PROTOCOLE EXPERIMENTAL — Mini-projet A
+Date                    : Tue Nov 24 15:22:56 2026
+Compilateur             : gcc 15.2.0
+Options de compilation  : gcc -std=c11 -O2 -Wall -Wextra -DSANS_INSTRUMENTATION
+Horloge                 : clock(), CLOCKS_PER_SEC = 1000
+Tailles n               : 1000 2000 5000 10000 15000 20000
+Simulations par taille  : 3 (jeux aleatoires differents, resultats moyennes)
+Seuil par mesure        : 100 ms de temps chronometre cumule (repetitions)
+Plafond par mesure      : 3.0 s
+k (top-k)               : 10
+Requetes par lot        : 200
+Suppressions par rep.   : n/10 (sur une copie de la structure, copie non chronometree)
+Graine srand()          : 2026
+Duree totale            : 321.6 s
+
+Unites : insertion/recherche/comptage/suppression/topk en microsecondes par operation ;
+construction et affichage_trie en millisecondes ; hauteur en niveaux ; memoire en Ko.
+insertion = temps de construction par n insertions successives / n.
+affichage_trie = production de la sequence triee dans un tableau (sans printf, pour ne pas
+mesurer la console).

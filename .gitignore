@@ -1,0 +1,16 @@
+# Binaires compilés (reconstruits par build.bat / make)
+build/
+
+# Dépôt cloné imbriqué (le contenu est poussé depuis la racine)
+ANNUAIRE-ETUDIANTS/
+
+# Énoncé officiel du sujet (document de l'université)
+MiniProjet_A_*.pdf
+
+# Fichiers temporaires
+__pycache__/
+*.pyc
+gnuplot/gnuplot.log
+*.exe
+*.dll
+*.o
